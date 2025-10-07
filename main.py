@@ -15,4 +15,5 @@ if ghicit > numer_secret:
     print("Incearca un numar mai mic")
 else:
     print("L-ai ghicit!")
+    print("test")
 
