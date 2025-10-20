@@ -14,5 +14,5 @@ _partea2 = _partea2.capitalize()
 _partea2 = _partea2.replace(".", "").replace(",", "").replace("!", "").replace("?","")
 
 
-_resultatfinal = _partea1 + " " +_partea2
-print(_resultatfinal)
+_rezultatfinal = _partea1 + " " +_partea2
+print(_rezultatfinal)
