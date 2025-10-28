@@ -29,3 +29,42 @@ print("Elevul", elev_max, "are nota maxima", nota_maxima, "si Elevul", elev_min,
 
 #A3
 
+media_clasei = sum(note) / len(note)
+
+print("Media clasei este:",media_clasei)
+
+
+#A4
+
+for i in range(len(elevi)):
+    if note[i] >= 5:
+        print("Elevii cu notele peste 5", elevi[i], note[i])
+
+
+
+#PARTEA B
+
+#B5
+for i in range(len(elevi)):
+    print("La aceste note s-au adaugat un punct:", note[i] + 1)
+
+#B6
+
+elevi.append(elev_nou)
+note.append(nota_elev_nou)
+
+print ("Numarul de elevi si notele au fost actualizate cu un elev nou si acum arata:", elevi, note)
+
+#B7
+if elev_de_sters in elevi:
+    pozitie_elevedesters = elevi.index(elev_de_sters)
+
+    elevi.pop(pozitie_elevedesters)
+    note.pop(pozitie_elevedesters)
+
+#B8
+print(elevi, note, "Elevul Darius a fost sters din lista")
+
+#Partea C
+
+
