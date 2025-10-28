@@ -66,5 +66,17 @@ if elev_de_sters in elevi:
 print(elevi, note, "Elevul Darius a fost sters din lista")
 
 #Partea C
+#C9
 
+i = 0
+while i < len(interogari_nume):
+    nume =interogari_nume[i]
+    i += 1
+    if nume =="stop":
+        break
+
+    if nume in elevi:
+        print(nume, ":",note[i])
+    else:
+        print(nume, "nu exista.")
 
