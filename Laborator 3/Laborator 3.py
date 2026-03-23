@@ -106,8 +106,8 @@ def goleste_comanda(comanda):
     comanda.clear()
 
 def main():
-    produse = citeste_produse_csv("produse.csv")
-    reduceri = citeste_reduceri_json("reduceri.json")
+    produse = citeste_produse_csv("data/produse.csv")
+    reduceri = citeste_reduceri_json("data/reduceri.json")
     comanda = {}
     reducere_curenta = ""
 
@@ -163,7 +163,7 @@ def main():
             scrie_bon_txt("bon.txt", bon)
             for idp in comanda:
                 produse[idp]["stoc"] -= comanda[idp]
-            scrie_produse_csv("produse.csv", produse)
+            scrie_produse_csv("data/produse.csv", produse)
             goleste_comanda(comanda)
             reducere_curenta = ""
 

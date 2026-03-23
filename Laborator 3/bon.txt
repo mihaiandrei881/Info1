@@ -1,0 +1,4 @@
+espresso x 2 = 16.0
+Total: 16.0
+Reducere: 0
+Total final: 16.0
