@@ -1,3 +1,4 @@
+import os
 import json
 
 PRODUSE_INITIALE = [
@@ -158,7 +159,6 @@ def scrie_produse_csv_din_dic(fisier, produse):
 
 def main():
     # la fiecare rulare, rescriem fisierele din cod
-    scrie_fisiere_initiale()
 
     produse = citeste_produse_csv("data/produse.csv")
     reduceri = citeste_reduceri_json("data/reduceri.json")
